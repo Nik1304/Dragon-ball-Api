@@ -53,3 +53,111 @@ html,body{height:100%;font-family:sans-serif;background:#000;color:#fff;}
   transform: scale(1.05);
   background: gold;
 }
+
+/* 🎯 HEADER Y NAVEGACIÓN */
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: gold;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  nav button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background: orange;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  nav button:hover {
+    background: gold;
+  }
+  
+  /* 🎵 Botón de música */
+  #toggleMusic {
+    background: #444;
+    color: #fff;
+    border: 2px solid gold;
+    border-radius: 8px;
+  }
+  
+  #toggleMusic:hover {
+    background: gold;
+    color: #000;
+  }
+  
+  /* 🔎 BUSCADOR */
+  #search-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #111;
+  }
+  
+  #searchInput {
+    width: 60%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid orange;
+    background: #000;
+    color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  #searchInput:focus {
+    outline: none;
+    border-color: gold;
+    box-shadow: 0 0 10px gold;
+  }
+  
+  /* 📦 CONTENIDO Y TARJETAS */
+  .content-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 20px;
+    padding: 10px 20px;
+  }
+  
+  .card {
+    background: #222;
+    border: 2px solid gold;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px gold;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    background: #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+    color: gold;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+  }
+  
