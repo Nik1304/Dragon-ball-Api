@@ -16,3 +16,33 @@
     <button id="startBtn">¡Empezar!</button>
   </div>
 </div>
+
+
+  <!-- Encabezado -->
+  <header style="display:none;">
+    <h1>Dragon Ball Explorer</h1>
+    <nav>
+      <button onclick="showSection('characters')">Personajes</button>
+      <button onclick="showSection('planets')">Planetas</button>
+      <button id="toggleMusic">⏸ Pausar Música</button>
+    </nav>
+  </header>
+
+  <!-- Contenido -->
+  <main style="display:none;">
+    <section id="search-section">
+      <input type="text" id="searchInput" placeholder="Buscar personaje..."/>
+    </section>
+    <section id="characters" class="content-section"></section>
+    <section id="planets" class="content-section" style="display:none;"></section>
+  </main>
+
+  <!-- Música -->
+  <audio id="bg-music" loop>
+    <source src="./Dragon Ball Z - Opening 1 v1 (A) [4K 60FPS  Creditless  CC].mp3" type="audio/mpeg"/>
+  </audio>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
